@@ -14,11 +14,15 @@
 
       <!-- left side -->
       <div class="left-side">
-        <img src="./images/image-product-desktop.jpg" alt="">
+        <!-- L'utilisation de la <picture>balise aidera à charger l'image correcte sur l'appareil de l'utilisateur, économisant ainsi la bande passante et améliorant les performances. -->
+        <picture>
+          <source media="(min-width: 460px)" srcset="./images/image-product-desktop.jpg">
+          <img src="./images/image-product-mobile.jpg" alt="image product">
+        </picture>
       </div>
 
       <!-- right side -->
-      <div class="right-side">
+      <div class="right-side">pr
         <!-- right side container -->
         <div class="right-side-content">
           <div class="title-right-panel">
